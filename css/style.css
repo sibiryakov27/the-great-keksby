@@ -9,22 +9,53 @@ body {
   background-color: white;
 }
 
-.page-header,
-.page-footer {
-  padding: 10px;
-  color: #c3c3c3;
-  background-color: #363636;
+.container {
+  width: 1020px;
+  margin: 0 auto;
 }
 
 .page-header {
-  background-image: url("img/header-bg.jpg");
+  min-height: 490px;
+  padding-top: 35px;
+  background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+.page-header,
+.page-footer {
+  color: #c3c3c3;
+  background-color: #363636;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header-top {
+  margin-bottom: 125px;
+}
+
+.header-logo {
+  float: left;
+  width: 205px;
+  height: 55px;
+}
+
 .main-nav {
+  float: left;
+  width: 520px;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 125px;
+}
+
+.btn-quick-order {
+  float: right;
 }
 
 .main-nav li {
@@ -71,18 +102,29 @@ body {
   text-decoration: none;
 }
 
+.features {
+  padding-top: 50px;
+  padding-bottom: 55px;
+}
+
 .features ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .feature-item {
+  float: left;
+  width: 279px;
   padding-top: 90px;
+  padding-left: 30px;
+  padding-right: 30px;
   text-align: center;
   border-left: 1px solid #d9d9d9;
 }
 
 .feature-item:first-child {
-  border-left: none;
+  border-color: transparent;
 }
 
 .feature-choice {
@@ -113,6 +155,29 @@ body {
   color: #a38b70;
 }
 
+.cat-reference {
+  padding-top: 70px;
+  padding-bottom: 90px;
+  background-color: #f2f2f2;
+}
+
+.cat-reference dt {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.cat-reference dd {
+  margin: 0;
+}
+
+.theory-container:first-child {
+  margin-bottom: 70px;
+}
+
+.cat-reference dl {
+  width: 830px;
+}
+
 .cat-reference img {
   border-radius: 5px;
 }
@@ -141,7 +206,18 @@ body {
   color: rgba(141, 116, 90, 0.3);
 }
 
+.reviews {
+  padding-top: 70px;
+  padding-bottom: 90px;
+}
+
 .review-item {
+  width: 377px;
+  margin: 0;
+  margin-right: 80px;
+  padding: 0;
+  padding-left: 50px;
+  float: left;
   border-left: 3px solid #a38b70;
 }
 
@@ -151,7 +227,28 @@ body {
 }
 
 .popular-and-price {
+  padding-top: 70px;
+  padding-bottom: 90px;
   background-color: #f2f2f2;
+}
+
+.popular-items {
+  margin-bottom: 50px;
+}
+
+.catalog-item {
+  float: left;
+  width: 308px;
+  margin-right: 48px;
+}
+
+.catalog-item:last-child {
+  margin-right: 0;
+}
+
+.catalog-item img {
+  max-width: 100%;
+  height: auto;
 }
 
 .catalog-item h3 {
@@ -189,7 +286,13 @@ body {
   text-align: center;
 }
 
+.feedback {
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+
 .feedback-form {
+  width: 630px;
   padding-right: 390px;
   background-image: url("../img/write.jpg");
   background-repeat: no-repeat;
@@ -235,7 +338,23 @@ body {
 }
 
 .page-footer {
-  margin-top: 20px;
+  padding-top: 45px;
+  padding-bottom: 50px;
+}
+
+.footer-top {
+  margin-bottom: 45px;
+}
+
+.footer-logo {
+  float: left;
+  width: 205px;
+  height: 55px;
+}
+
+.footer-middle {
+  margin-bottom: 50px;
+  padding-top: 50px;
 }
 
 .footer-middle,
@@ -243,10 +362,16 @@ body {
   border-top: 1px solid #5e5e5e;
 }
 
+.footer-menu {
+  float: left;
+  width: 150px;
+  margin-right: 20px;
+}
+
 .footer-menu h3 {
-  font-family: "Georgia", serif;
-  font-size: 24px;
   font-weight: bold;
+  font-size: 24px;
+  font-family: "Georgia", serif;
   color: #a38b70;
 }
 
@@ -267,20 +392,35 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.footer-bottom {
+  padding-top: 50px;
+}
+
+.footer-social {
+  float: left;
+  width: 490px;
+}
+
 .footer-social b {
-  font-family: "Georgia", serif;
-  font-size: 24px;
   font-weight: bold;
+  font-size: 24px;
+  font-family: "Georgia", serif;
   color: #a38b70;
 }
 
+.social-btn {
+  color: #ffffff;
+}
+
 .footer-copyright {
+  float: right;
+  width: 236px;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .footer-copyright a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -290,8 +430,4 @@ body {
 
 .footer-copyright a:active {
   color: rgba(255, 255, 255, 0.3);
-}
-
-.social-btn {
-  color: #ffffff;
 }
